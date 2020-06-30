@@ -1,0 +1,81 @@
+$basicColorWhite: #ffffff;
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  font-size: 25px;
+  color: $basicColorWhite;
+  margin: 0;
+  & > .social-media__link {
+    color: $basicColorWhite;
+    font-size: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    transition: width 200ms ease-in-out;
+    width: 300px;
+    justify-content: left;
+    padding-left: 30px;
+    & > .social-media__link {
+      transition: font-size 150ms ease-in-out;
+      font-size: 1.3rem;
+      padding: 2rem;
+    }
+  }
+}
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.social-media.blog {
+  @extend .social-media;
+  background-color: #e17b77;
+}
+.social-media.twitter {
+  @extend .social-media;
+  background-color: #00aced;
+}
+.social-media.linkedin {
+  @extend .social-media;
+  background-color: #007bb6;
+}
+.social-media.facebook {
+  @extend .social-media;
+  background-color: #3b5998;
+}
+.social-media.github {
+  @extend .social-media;
+  background-color: #333;
+  margin-bottom: 100px;
+}
+
+.fa-laptop-code::before {
+  content: '\\f5fc';
+}
+.fa-twitter::before {
+  content: '\\f099';
+}
+.fa-linkedin-in::before {
+  content: '\\f0e1';
+}
+.fa-facebook-f::before {
+  content: '\\f39e';
+}
+.fa-github::before {
+  content: '\\f09b';
+}

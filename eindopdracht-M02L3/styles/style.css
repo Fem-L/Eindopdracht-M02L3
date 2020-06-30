@@ -1,0 +1,104 @@
+.social-media, .social-media.blog, .social-media.twitter, .social-media.linkedin, .social-media.facebook, .social-media.github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.social-media > .social-media__link {
+  color: #ffffff;
+  font-size: 0;
+}
+
+.social-media:hover {
+  cursor: pointer;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+  width: 300px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 30px;
+}
+
+.social-media:hover > .social-media__link {
+  -webkit-transition: font-size 150ms ease-in-out;
+  transition: font-size 150ms ease-in-out;
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+}
+
+.flex-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blog.social-media {
+  background-color: #e17b77;
+}
+
+.twitter.social-media {
+  background-color: #00aced;
+}
+
+.linkedin.social-media {
+  background-color: #007bb6;
+}
+
+.facebook.social-media {
+  background-color: #3b5998;
+}
+
+.github.social-media {
+  background-color: #333;
+  margin-bottom: 100px;
+}
+
+.fa-laptop-code::before {
+  content: '\\f5fc';
+}
+
+.fa-twitter::before {
+  content: '\\f099';
+}
+
+.fa-linkedin-in::before {
+  content: '\\f0e1';
+}
+
+.fa-facebook-f::before {
+  content: '\\f39e';
+}
+
+.fa-github::before {
+  content: '\\f09b';
+}
+/*# sourceMappingURL=style.css.map */
